@@ -2,6 +2,7 @@
 
 ## Table of content
 1. [Info](#info)
+2. [Merge Sorting](#merge-sorting)
 
 
 ### Info
