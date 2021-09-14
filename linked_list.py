@@ -41,7 +41,7 @@ class linked_list:
             if cur_idx == index: return cur_node.data
             cur_idx += 1
 
-    def insert(self,index,data):
+    def insert(self, index, data):
         if index >= self.length() or index < 0:
             return self.append(data)
         cur_node = self.head
@@ -51,10 +51,10 @@ class linked_list:
             cur_node = cur_node.next
             if cur_idx == index:
                 new_node = node(data)
-                prior_node.next=cur_node
-                new_node.next=cur_node
+                prior_node.next = new_node
+                new_node.next = cur_node
                 return
-            prior_node=cur_node
+            prior_node = cur_node
             cur_idx += 1
 
     def erase(self, index):
@@ -84,10 +84,4 @@ class linked_list:
                 return
             cur_idx += 1
 
-my_list = linked_list()
-my_list.append(0)
-my_list.append(1)
-my_list.append(2)
-my_list.append(3)
-my_list.append(4)
-my_list.display()
+
